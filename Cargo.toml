@@ -1,0 +1,30 @@
+[package]
+name = "winui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies.windows-app]
+git = "https://github.com/microsoft/windows-app-rs"
+features = [
+    "WindowsAppSdk_Foundation"
+]
+
+[dependencies.windows]
+version = "0.37"
+features = [
+    "implement",
+    "Foundation_Collections",
+    "UI_Xaml_Interop",
+]
+
+[dependencies.windows-app]
+git = "https://github.com/microsoft/windows-app-rs"
+features = [
+    "implement",
+    "WindowsAppSdk_Foundation",
+    "UI_Xaml_Controls_Primitives",
+    "UI_Xaml_XamlTypeInfo",
+    "UI_Xaml_Markup"
+]
